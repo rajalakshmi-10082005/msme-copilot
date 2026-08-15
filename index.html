@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MSME Copilot – AI Business Assistant Login</title>
+
+  <meta
+    name="description"
+    content="Log in to MSME Copilot to manage sales, inventory, expenses and customers with an AI chatbot built for small business owners."
+  />
+
+  <link rel="stylesheet" href="C:\Users\meena\copilot frontend\.vscode\style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation Menu -->
+  <nav style="background:#2563eb;padding:15px;text-align:center;">
+    <a href=".vscode/index.html" style="color:white;text-decoration:none;margin:15px;">Home</a>
+    <a href="C:\Users\meena\copilot frontend\.vscode\dashboard.html" style="color:white;text-decoration:none;margin:15px;">Dashboard</a>
+    <a href="C:\Users\meena\copilot frontend\.vscode\customer.html" style="color:white;text-decoration:none;margin:15px;">Customers</a>
+    <a href="C:\Users\meena\copilot frontend\.vscode\inventory.html" style="color:white;text-decoration:none;margin:15px;">Inventory</a>
+    <a href="C:\Users\meena\copilot frontend\.vscode\sales.html" style="color:white;text-decoration:none;margin:15px;">Sales</a>
+    <a href="C:\Users\meena\copilot frontend\.vscode\expenses.html" style="color:white;text-decoration:none;margin:15px;">Expenses</a>
+    <a href="C:\Users\meena\copilot frontend\.vscode\chat.html" style="color:white;text-decoration:none;margin:15px;">AI Chat</a>
+  </nav>
+
+  <div class="auth-page">
+
+    <section class="auth-hero">
+      <h1>MSME Copilot</h1>
+
+      <p>
+        A web-based AI business management system that helps MSME owners manage
+        sales, inventory, expenses and customers — and ask an intelligent
+        chatbot for instant business support.
+      </p>
+
+      <ul class="feature-list">
+        <li>Sales management & daily revenue tracking</li>
+        <li>Inventory tracking with low-stock alerts</li>
+        <li>Expense monitoring with category summaries</li>
+        <li>Customer records and top-buyer insights</li>
+        <li>AI chatbot that answers from your live data</li>
+        <li>Smart business recommendations</li>
+      </ul>
+    </section>
+
+    <section class="auth-panel">
+
+      <div class="auth-card">
+
+        <h2 id="form-title">Welcome back</h2>
+
+        <p class="sub" id="form-sub">
+          Log in to open your business dashboard.
+        </p>
+
+        <div class="auth-tabs">
+          <button type="button" id="tab-login" class="active">Log in</button>
+          <button type="button" id="tab-register">Create account</button>
+        </div>
+
+        <div class="alert error hidden" id="error"></div>
+
+        <form id="auth-form">
+
+          <div class="field" id="business-field" style="display:none">
+            <label for="businessName">Business Name</label>
+            <input
+              id="businessName"
+              name="businessName"
+              placeholder="Sri Ganesh Provision Store">
+          </div>
+
+          <div class="field">
+            <label for="username">Username</label>
+            <input
+              id="username"
+              name="username"
+              autocomplete="username"
+              required
+              placeholder="demo">
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              placeholder="••••••••">
+          </div>
+
+          <button class="btn full" type="submit" id="submit-btn">
+            Log in
+          </button>
+
+        </form>
+
+        <div class="demo-hint">
+          Demo account:<br>
+          Username: <strong>demo</strong><br>
+          Password: <strong>demo1234</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="C:\Users\meena\copilot frontend\.vscode\api.js"></script>
+  <script src="C:\Users\meena\copilot frontend\.vscode\auth.js"></script>
+
+</body>
+</html>
